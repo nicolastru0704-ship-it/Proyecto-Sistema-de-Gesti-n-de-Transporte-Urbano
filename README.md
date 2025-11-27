@@ -1,40 +1,16 @@
+# Sistema de Gestión de Transporte Urbano
 
-<p align="center">
-  <img src="portada.png" width="800">
-</p>
+## Ejecutar localmente
 
-<h1 align="center">Sistema de Gestión de Transporte Urbano</h1>
+1. Crear un entorno virtual (recomendado):
+   python -m venv venv
+   source venv/bin/activate   # Linux/Mac
+   venv\Scripts\activate    # Windows
 
-<p align="center">
-  Programa desarrollado en Python para gestionar rutas, conductores y pasajeros,
-  incluyendo cálculo de ganancias, almacenamiento de datos y generación de reportes.
-</p>
+2. Instalar dependencias:
+   pip install -r requirements.txt
 
----
+3. Ejecutar CLI:
+   python -m sistema.cli
 
-## 🚀 Objetivo
-Crear un sistema que gestione rutas, conductores y pasajeros, con cálculos automáticos de ganancias, estadísticas básicas y almacenamiento de información.
-
----
-
-## 🔧 Funcionalidades Principales
-- ✔️ Registrar rutas (origen, destino, horario)  
-- ✔️ Asignar conductores y calcular ganancias  
-- ✔️ Guardar información en archivos  
-- ✔️ Implementación de herencia (Persona → Conductor, Pasajero)  
-- ✔️ Reportes automáticos de ocupación y rendimiento  
-
----
-
-## 🧰 Herramientas Sugeridas
-| Módulo | Descripción |
-|--------|-------------|
-| `datetime` | Manejo de fechas y horarios |
-| `csv` | Lectura y almacenamiento en archivos |
-| `pandas` | Procesamiento y análisis de datos |
-
----
-
-<p align="center">
-  <sub>Proyecto académico — Programación en Python</sub>
-</p>
+Los archivos CSV se almacenarán en la carpeta `data/` creada automáticamente en el directorio donde ejecutes el programa.
